@@ -47,7 +47,6 @@ public class Main {
             for(Anggota anggota : anggotaSet) {
                 if(anggota.idAnggota.equals(idAnggota)){
                     anggotaTerdaftar = true;
-                    break;
                 }
             }
             if(!anggotaTerdaftar){
@@ -59,7 +58,7 @@ public class Main {
                 System.out.println("Buku dengan ISBN: " + isbnBuku + " tidak ditemukan.");
                 continue;
             }
-            if(isbnBuku.equals(statusBuku.get(isbnBuku))){
+            if(statusBuku.get(isbnBuku) != null && statusBuku.get(isbnBuku).equals("Dipinjam")){
                 System.out.println(isbnBuku + " sudah dipinjam oleh anggota lain.");
             }else{
                 statusBuku.put(isbnBuku, "Dipinjam");
