@@ -61,11 +61,7 @@ public class Main {
         
         System.out.println("\nRiwayat Transaksi");
         for (RiwayatTransaksi rt : riwayatTransaksi) {
-            System.out.println("Nama Pemesan: " + rt.namaPemesan);
-            System.out.println("Film Dipesan: " + rt.filmDipesan.namaFilm);
-            System.out.println("Harga Film: " + rt.filmDipesan.hargaFilm);
-            System.out.println("Nomor Kursi: " + rt.nomorKursi);
-            System.out.println("-----------------------------");
+            rt.tampilkanTransaksi();
         }
     }
 }

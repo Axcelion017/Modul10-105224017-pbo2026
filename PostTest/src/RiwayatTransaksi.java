@@ -10,5 +10,12 @@ public class RiwayatTransaksi {
         this.nomorKursi = nomorKursi;
     }
 
+    public void tampilkanTransaksi() {
+        System.out.println("Nama Pemesan: " + namaPemesan);
+        System.out.println("Film Dipesan: " + filmDipesan.namaFilm);
+        System.out.println("Harga Film: " + filmDipesan.hargaFilm);
+        System.out.println("Nomor Kursi: " + nomorKursi);
+        System.out.println("-----------------------------");
+    }
     
 }
